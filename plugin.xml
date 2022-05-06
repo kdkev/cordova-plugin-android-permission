@@ -19,6 +19,16 @@
     <js-module src="www/permissions.js" name="Permissions">
       <clobbers target="cordova.plugins.permissions" />
     </js-module>
+     
+     <activity
+          android:name=".MainActivity"
+          android:exported="true"
+          android:theme="@style/Theme.MyApplication.NoActionBar">
+          <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter>
+    </activity>
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Permissions">
